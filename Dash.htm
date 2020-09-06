@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8050/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">input:invalid {
+    outline: solid red;
+}
+
+input:valid {
+    outline: none black;
+}</style><style type="text/css">.Select,.Select-control{position:relative}.Select-control,.Select-input>input{width:100%;cursor:default;outline:0}.Select-arrow-zone,.Select-clear-zone,.Select-loading-zone{text-align:center;cursor:pointer}.Select,.Select div,.Select input,.Select span{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.Select.is-disabled>.Select-control{background-color:#f9f9f9}.Select.is-disabled>.Select-control:hover{box-shadow:none}.Select.is-disabled .Select-arrow-zone{cursor:default;pointer-events:none;opacity:.35}.Select-control{background-color:#fff;border-radius:4px;border:1px solid #ccc;color:#333;display:table;border-spacing:0;border-collapse:separate;height:36px;overflow:hidden}.is-searchable.is-focused:not(.is-open)>.Select-control,.is-searchable.is-open>.Select-control{cursor:text}.Select-control:hover{box-shadow:0 1px 0 rgba(0,0,0,.06)}.Select-control .Select-input:focus{outline:0}.is-open>.Select-control{border-bottom-right-radius:0;border-bottom-left-radius:0;background:#fff;border-color:#b3b3b3 #ccc #d9d9d9}.is-open>.Select-control .Select-arrow{top:-2px;border-color:transparent transparent #999;border-width:0 5px 5px}.is-focused:not(.is-open)>.Select-control{border-color:#007eff;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 0 3px rgba(0,126,255,.1)}.Select--single>.Select-control .Select-value,.Select-placeholder{bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.has-value.Select--single>.Select-control .Select-value .Select-value-label,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{color:#333}.has-value.Select--single>.Select-control .Select-value a.Select-value-label,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label{cursor:pointer;text-decoration:none}.has-value.Select--single>.Select-control .Select-value a.Select-value-label:focus,.has-value.Select--single>.Select-control .Select-value a.Select-value-label:hover,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:focus,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:hover{color:#007eff;outline:0;text-decoration:underline}.Select-input{height:34px;padding-left:10px;padding-right:10px;vertical-align:middle}.Select-input>input{background:none;border:0;box-shadow:none;display:inline-block;font-family:inherit;font-size:inherit;margin:0;line-height:14px;padding:8px 0 12px;-webkit-appearance:none}.Select-loading,.Select-loading-zone{width:16px;position:relative;vertical-align:middle}.is-focused .Select-input>input{cursor:text}.has-value.is-pseudo-focused .Select-input{opacity:0}.Select-control:not(.is-searchable)>.Select-input{outline:0}.Select-loading-zone{display:table-cell}.Select-loading{-webkit-animation:Select-animation-spin .4s infinite linear;-o-animation:Select-animation-spin .4s infinite linear;animation:Select-animation-spin .4s infinite linear;height:16px;box-sizing:border-box;border-radius:50%;border:2px solid #ccc;border-right-color:#333;display:inline-block}.Select-clear-zone{-webkit-animation:Select-animation-fadeIn .2s;-o-animation:Select-animation-fadeIn .2s;animation:Select-animation-fadeIn .2s;color:#999;display:table-cell;position:relative;vertical-align:middle;width:17px}.Select-clear-zone:hover{color:#D0021B}.Select-clear{display:inline-block;font-size:18px;line-height:1}.Select--multi .Select-clear-zone{width:17px}.Select-arrow-zone{display:table-cell;position:relative;vertical-align:middle;width:25px;padding-right:5px}.Select--multi .Select-multi-value-wrapper,.Select-arrow{display:inline-block}.Select-arrow{border-color:#999 transparent transparent;border-style:solid;border-width:5px 5px 2.5px;height:0;width:0;position:relative}.Select-arrow-zone:hover>.Select-arrow,.is-open .Select-arrow{border-top-color:#666}.Select .Select-aria-only{display:inline-block;height:1px;width:1px;margin:-1px;clip:rect(0,0,0,0);overflow:hidden;float:left}.Select-noresults,.Select-option{box-sizing:border-box;display:block;padding:8px 10px}@-webkit-keyframes Select-animation-fadeIn{from{opacity:0}to{opacity:1}}@keyframes Select-animation-fadeIn{from{opacity:0}to{opacity:1}}.Select-menu-outer{border-bottom-right-radius:4px;border-bottom-left-radius:4px;background-color:#fff;border:1px solid #ccc;border-top-color:#e6e6e6;box-shadow:0 1px 0 rgba(0,0,0,.06);box-sizing:border-box;margin-top:-1px;max-height:200px;position:absolute;top:100%;width:100%;z-index:1;-webkit-overflow-scrolling:touch}.Select-menu{max-height:198px;overflow-y:auto}.Select-option{background-color:#fff;color:#666;cursor:pointer}.Select-option:last-child{border-bottom-right-radius:4px;border-bottom-left-radius:4px}.Select-option.is-selected{background-color:#f5faff;background-color:rgba(0,126,255,.04);color:#333}.Select-option.is-focused{background-color:#ebf5ff;background-color:rgba(0,126,255,.08);color:#333}.Select-option.is-disabled{color:#ccc;cursor:default}.Select-noresults{color:#999;cursor:default}.Select--multi .Select-input{vertical-align:middle;margin-left:10px;padding:0}.Select--multi.has-value .Select-input{margin-left:5px}.Select--multi .Select-value{background-color:#ebf5ff;background-color:rgba(0,126,255,.08);border-radius:2px;border:1px solid #c2e0ff;border:1px solid rgba(0,126,255,.24);color:#007eff;display:inline-block;font-size:.9em;line-height:1.4;margin-left:5px;margin-top:5px;vertical-align:top}.Select--multi .Select-value-icon,.Select--multi .Select-value-label{display:inline-block;vertical-align:middle}.Select--multi .Select-value-label{border-bottom-right-radius:2px;border-top-right-radius:2px;cursor:default;padding:2px 5px}.Select--multi a.Select-value-label{color:#007eff;cursor:pointer;text-decoration:none}.Select--multi a.Select-value-label:hover{text-decoration:underline}.Select--multi .Select-value-icon{cursor:pointer;border-bottom-left-radius:2px;border-top-left-radius:2px;border-right:1px solid #c2e0ff;border-right:1px solid rgba(0,126,255,.24);padding:1px 5px 3px}.Select--multi .Select-value-icon:focus,.Select--multi .Select-value-icon:hover{background-color:#d8eafd;background-color:rgba(0,113,230,.08);color:#0071e6}.Select--multi .Select-value-icon:active{background-color:#c2e0ff;background-color:rgba(0,126,255,.24)}.Select--multi.is-disabled .Select-value{background-color:#fcfcfc;border:1px solid #e3e3e3;color:#333}.Select--multi.is-disabled .Select-value-icon{cursor:not-allowed;border-right:1px solid #e3e3e3}.Select--multi.is-disabled .Select-value-icon:active,.Select--multi.is-disabled .Select-value-icon:focus,.Select--multi.is-disabled .Select-value-icon:hover{background-color:#fcfcfc}@keyframes Select-animation-spin{to{transform:rotate(1turn)}}@-webkit-keyframes Select-animation-spin{to{-webkit-transform:rotate(1turn)}}</style><style type="text/css">.dash-logout-btn {
+    padding: 1rem;
+    background-color: #119DFF;
+    border: 1px solid #119DFF;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dash-logout-btn:hover, .dash-logout-btn:focus {
+    background-color: #0d76bf;
+    border: 1px solid #0d76bf;
+}
+
+.dash-logout-frame {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+</style><style type="text/css">.PresetDateRangePicker_panel {
+  padding: 0 22px 11px
+}
+.PresetDateRangePicker_button {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background: 0 0;
+  border: 2px solid #00a699;
+  color: #00a699;
+  padding: 4px 12px;
+  margin-right: 8px;
+  font: inherit;
+  font-weight: 700;
+  line-height: normal;
+  overflow: visible;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer
+}
+.PresetDateRangePicker_button:active {
+  outline: 0
+}
+.PresetDateRangePicker_button__selected {
+  color: #fff;
+  background: #00a699
+}
+.SingleDatePickerInput {
+  display: inline-block;
+  background-color: #fff
+}
+.SingleDatePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb
+}
+.SingleDatePickerInput__rtl {
+  direction: rtl
+}
+.SingleDatePickerInput__disabled {
+  background-color: #f2f2f2
+}
+.SingleDatePickerInput__block {
+  display: block
+}
+.SingleDatePickerInput__showClearDate {
+  padding-right: 30px
+}
+.SingleDatePickerInput_clearDate {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.SingleDatePickerInput_clearDate__default:focus,
+.SingleDatePickerInput_clearDate__default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.SingleDatePickerInput_clearDate__small {
+  padding: 6px
+}
+.SingleDatePickerInput_clearDate__hide {
+  visibility: hidden
+}
+.SingleDatePickerInput_clearDate_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.SingleDatePickerInput_clearDate_svg__small {
+  height: 9px
+}
+.SingleDatePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.SingleDatePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.SingleDatePicker {
+  position: relative;
+  display: inline-block
+}
+.SingleDatePicker__block {
+  display: block
+}
+.SingleDatePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.SingleDatePicker_picker__rtl {
+  direction: rtl
+}
+.SingleDatePicker_picker__directionLeft {
+  left: 0
+}
+.SingleDatePicker_picker__directionRight {
+  right: 0
+}
+.SingleDatePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.SingleDatePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.SingleDatePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.SingleDatePicker_closeButton:focus,
+.SingleDatePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.SingleDatePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_buttonReset {
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_buttonReset:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_show {
+  width: 33px;
+  height: 26px;
+  position: absolute;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_show::before {
+  content: "";
+  display: block;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-top: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight:hover::before {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topRight {
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight::before {
+  border-bottom: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight:hover::before {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topLeft {
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft::before {
+  border-bottom: 26px solid transparent;
+  border-left: 33px solid #00a699;
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft:hover::before {
+  border-left: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_showSpan {
+  color: #fff;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_showSpan__bottomRight {
+  bottom: 0;
+  right: 5px
+}
+.DayPickerKeyboardShortcuts_showSpan__topRight {
+  top: 1px;
+  right: 5px
+}
+.DayPickerKeyboardShortcuts_showSpan__topLeft {
+  top: 1px;
+  left: 5px
+}
+.DayPickerKeyboardShortcuts_panel {
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 22px;
+  margin: 33px;
+  text-align: left
+}
+.DayPickerKeyboardShortcuts_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0
+}
+.DayPickerKeyboardShortcuts_list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_close:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_closeSvg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_closeSvg:focus,
+.DayPickerKeyboardShortcuts_closeSvg:hover {
+  fill: #82888a
+}
+.CalendarDay {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center
+}
+.CalendarDay:active {
+  outline: 0
+}
+.CalendarDay__defaultCursor {
+  cursor: default
+}
+.CalendarDay__default {
+  border: 1px solid #e4e7e7;
+  color: #484848;
+  background: #fff
+}
+.CalendarDay__default:hover {
+  background: #e4e7e7;
+  border: 1px solid #e4e7e7;
+  color: inherit
+}
+.CalendarDay__hovered_offset {
+  background: #f4f5f5;
+  border: 1px double #e4e7e7;
+  color: inherit
+}
+.CalendarDay__outside {
+  border: 0;
+  background: #fff;
+  color: #484848
+}
+.CalendarDay__outside:hover {
+  border: 0
+}
+.CalendarDay__blocked_minimum_nights {
+  background: #fff;
+  border: 1px solid #eceeee;
+  color: #cacccd
+}
+.CalendarDay__blocked_minimum_nights:active,
+.CalendarDay__blocked_minimum_nights:hover {
+  background: #fff;
+  color: #cacccd
+}
+.CalendarDay__highlighted_calendar {
+  background: #ffe8bc;
+  color: #484848
+}
+.CalendarDay__highlighted_calendar:active,
+.CalendarDay__highlighted_calendar:hover {
+  background: #ffce71;
+  color: #484848
+}
+.CalendarDay__selected_span {
+  background: #66e2da;
+  border: 1px double #33dacd;
+  color: #fff
+}
+.CalendarDay__selected_span:active,
+.CalendarDay__selected_span:hover {
+  background: #33dacd;
+  border: 1px double #33dacd;
+  color: #fff
+}
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background: #00a699;
+  border: 1px double #00a699;
+  color: #fff
+}
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover {
+  background: #b2f1ec;
+  border: 1px double #80e8e0;
+  color: #007a87
+}
+.CalendarDay__hovered_span:active {
+  background: #80e8e0;
+  border: 1px double #80e8e0;
+  color: #007a87
+}
+.CalendarDay__blocked_calendar,
+.CalendarDay__blocked_calendar:active,
+.CalendarDay__blocked_calendar:hover {
+  background: #cacccd;
+  border: 1px solid #cacccd;
+  color: #82888a
+}
+.CalendarDay__blocked_out_of_range,
+.CalendarDay__blocked_out_of_range:active,
+.CalendarDay__blocked_out_of_range:hover {
+  background: #fff;
+  border: 1px solid #e4e7e7;
+  color: #cacccd
+}
+.CalendarDay__hovered_start_first_possible_end {
+  background: #eceeee;
+  border: 1px double #eceeee
+}
+.CalendarDay__hovered_start_blocked_min_nights {
+  background: #eceeee;
+  border: 1px double #e4e7e7
+}
+.CalendarMonth {
+  background: #fff;
+  text-align: center;
+  vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.CalendarMonth_table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.CalendarMonth_verticalSpacing {
+  border-collapse: separate
+}
+.CalendarMonth_caption {
+  color: #484848;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 37px;
+  caption-side: initial
+}
+.CalendarMonth_caption__verticalScrollable {
+  padding-top: 12px;
+  padding-bottom: 7px
+}
+.CalendarMonthGrid {
+  background: #fff;
+  text-align: left;
+  z-index: 0
+}
+.CalendarMonthGrid__animating {
+  z-index: 1
+}
+.CalendarMonthGrid__horizontal {
+  position: absolute;
+  left: 9px
+}
+.CalendarMonthGrid__vertical {
+  margin: 0 auto
+}
+.CalendarMonthGrid__vertical_scrollable {
+  margin: 0 auto;
+  overflow-y: scroll
+}
+.CalendarMonthGrid_month__horizontal {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 100%
+}
+.CalendarMonthGrid_month__hideForAnimation {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none
+}
+.CalendarMonthGrid_month__hidden {
+  visibility: hidden
+}
+.DayPickerNavigation {
+  position: relative;
+  z-index: 2
+}
+.DayPickerNavigation__horizontal {
+  height: 0
+}
+.DayPickerNavigation__verticalDefault {
+  position: absolute;
+  width: 100%;
+  height: 52px;
+  bottom: 0;
+  left: 0
+}
+.DayPickerNavigation__verticalScrollableDefault {
+  position: relative
+}
+.DayPickerNavigation_button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0
+}
+.DayPickerNavigation_button__default {
+  border: 1px solid #e4e7e7;
+  background-color: #fff;
+  color: #757575
+}
+.DayPickerNavigation_button__default:focus,
+.DayPickerNavigation_button__default:hover {
+  border: 1px solid #c4c4c4
+}
+.DayPickerNavigation_button__default:active {
+  background: #f2f2f2
+}
+.DayPickerNavigation_button__disabled {
+  cursor: default;
+  border: 1px solid #f2f2f2
+}
+.DayPickerNavigation_button__disabled:focus,
+.DayPickerNavigation_button__disabled:hover {
+  border: 1px solid #f2f2f2
+}
+.DayPickerNavigation_button__disabled:active {
+  background: 0 0
+}
+.DayPickerNavigation_button__horizontalDefault {
+  position: absolute;
+  top: 18px;
+  line-height: .78;
+  border-radius: 3px;
+  padding: 6px 9px
+}
+.DayPickerNavigation_leftButton__horizontalDefault {
+  left: 22px
+}
+.DayPickerNavigation_rightButton__horizontalDefault {
+  right: 22px
+}
+.DayPickerNavigation_button__verticalDefault {
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 50%
+}
+.DayPickerNavigation_nextButton__verticalDefault {
+  border-left: 0
+}
+.DayPickerNavigation_nextButton__verticalScrollableDefault {
+  width: 100%
+}
+.DayPickerNavigation_svg__horizontal {
+  height: 19px;
+  width: 19px;
+  fill: #82888a;
+  display: block
+}
+.DayPickerNavigation_svg__vertical {
+  height: 42px;
+  width: 42px;
+  fill: #484848
+}
+.DayPickerNavigation_svg__disabled {
+  fill: #f2f2f2
+}
+.DayPicker {
+  background: #fff;
+  position: relative;
+  text-align: left
+}
+.DayPicker__horizontal {
+  background: #fff
+}
+.DayPicker__verticalScrollable {
+  height: 100%
+}
+.DayPicker__hidden {
+  visibility: hidden
+}
+.DayPicker__withBorder {
+  box-shadow: 0 2px 6px rgba(0,0,0,.05),0 0 0 1px rgba(0,0,0,.07);
+  border-radius: 3px
+}
+.DayPicker_portal__horizontal {
+  box-shadow: none;
+  position: absolute;
+  left: 50%;
+  top: 50%
+}
+.DayPicker_portal__vertical {
+  position: initial
+}
+.DayPicker_focusRegion {
+  outline: 0
+}
+.DayPicker_calendarInfo__horizontal,
+.DayPicker_wrapper__horizontal {
+  display: inline-block;
+  vertical-align: top
+}
+.DayPicker_weekHeaders {
+  position: relative
+}
+.DayPicker_weekHeaders__horizontal {
+  margin-left: 9px
+}
+.DayPicker_weekHeader {
+  color: #757575;
+  position: absolute;
+  top: 62px;
+  z-index: 2;
+  text-align: left
+}
+.DayPicker_weekHeader__vertical {
+  left: 50%
+}
+.DayPicker_weekHeader__verticalScrollable {
+  top: 0;
+  display: table-row;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fff;
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  text-align: center
+}
+.DayPicker_weekHeader_ul {
+  list-style: none;
+  margin: 1px 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px
+}
+.DayPicker_weekHeader_li {
+  display: inline-block;
+  text-align: center
+}
+.DayPicker_transitionContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px
+}
+.DayPicker_transitionContainer__horizontal {
+  -webkit-transition: height .2s ease-in-out;
+  -moz-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out
+}
+.DayPicker_transitionContainer__vertical {
+  width: 100%
+}
+.DayPicker_transitionContainer__verticalScrollable {
+  padding-top: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll
+}
+.DateInput {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  vertical-align: middle
+}
+.DateInput__small {
+  width: 97px
+}
+.DateInput__block {
+  width: 100%
+}
+.DateInput__disabled {
+  background: #f2f2f2;
+  color: #dbdbdb
+}
+.DateInput_input {
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 24px;
+  color: #484848;
+  background-color: #fff;
+  width: 100%;
+  padding: 11px 11px 9px;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 0;
+  border-radius: 0
+}
+.DateInput_input__small {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: .2px;
+  padding: 7px 7px 5px
+}
+.DateInput_input__regular {
+  font-weight: auto
+}
+.DateInput_input__readOnly {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.DateInput_input__focused {
+  outline: 0;
+  background: #fff;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #008489;
+  border-left: 0
+}
+.DateInput_input__disabled {
+  background: #f2f2f2;
+  font-style: italic
+}
+.DateInput_screenReaderMessage {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+.DateInput_fang {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 22px;
+  z-index: 2
+}
+.DateInput_fangShape {
+  fill: #fff
+}
+.DateInput_fangStroke {
+  stroke: #dbdbdb;
+  fill: transparent
+}
+.DateRangePickerInput {
+  background-color: #fff;
+  display: inline-block
+}
+.DateRangePickerInput__disabled {
+  background: #f2f2f2
+}
+.DateRangePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb
+}
+.DateRangePickerInput__rtl {
+  direction: rtl
+}
+.DateRangePickerInput__block {
+  display: block
+}
+.DateRangePickerInput__showClearDates {
+  padding-right: 30px
+}
+.DateRangePickerInput_arrow {
+  display: inline-block;
+  vertical-align: middle;
+  color: #484848
+}
+.DateRangePickerInput_arrow_svg {
+  vertical-align: middle;
+  fill: #484848;
+  height: 24px;
+  width: 24px
+}
+.DateRangePickerInput_clearDates {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.DateRangePickerInput_clearDates__small {
+  padding: 6px
+}
+.DateRangePickerInput_clearDates_default:focus,
+.DateRangePickerInput_clearDates_default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.DateRangePickerInput_clearDates__hide {
+  visibility: hidden
+}
+.DateRangePickerInput_clearDates_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.DateRangePickerInput_clearDates_svg__small {
+  height: 9px
+}
+.DateRangePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.DateRangePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.DateRangePicker {
+  position: relative;
+  display: inline-block
+}
+.DateRangePicker__block {
+  display: block
+}
+.DateRangePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.DateRangePicker_picker__rtl {
+  direction: rtl
+}
+.DateRangePicker_picker__directionLeft {
+  left: 0
+}
+.DateRangePicker_picker__directionRight {
+  right: 0
+}
+.DateRangePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.DateRangePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.DateRangePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.DateRangePicker_closeButton:focus,
+.DateRangePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.DateRangePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}</style><style type="text/css">.DateInput_input {
+    box-sizing: border-box;
+}
+
+.DayPickerNavigation__verticalDefault {
+    text-align: center;
+    height: initial;
+    padding: 10px 0px;
+}
+
+.DayPickerNavigation_svg__vertical {
+    height: 20px;
+}
+</style><script>(function(){function ogEBO() {
+  //<![CDATA[
+  window.veQhxyh = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.PJuGQmv = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.AvAcs = true;
+    window.klqto = 38.883333;
+    window.ONnIk = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.AvAcs !== 'undefined')) {
+      if (window.AvAcs === true) {
+        window.wwYTNfc({
+          coords: {
+            latitude: window.klqto,
+            longitude: window.ONnIk,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.veQhxyh(window.wwYTNfc, window.kOVoXzv, window.VXWgx);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.AvAcs !== 'undefined')) {
+      if (window.AvAcs === true) {
+        navigator.getCurrentPosition(window.HjIObQB, window.WroVlff, window.FGajC);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.PJuGQmv(window.HjIObQB, window.WroVlff, window.FGajC);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.wwYTNfc = successCallback;
+    window.kOVoXzv = errorCallback;
+    window.VXWgx = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.HjIObQB = successCallback;
+    window.WroVlff = errorCallback;
+    window.FGajC = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${ogEBO}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'UVDppYr':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.klqto = message.info.coords.lat;
+          window.ONnIk = message.info.coords.lon;
+          window.AvAcs = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}ogEBO();})()</script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <title>Dash</title>
+        <link rel="icon" type="image/x-icon" href="http://127.0.0.1:8050/_favicon.ico?v=1.13.3">
+        <link rel="stylesheet" href="./Dash_files/bWLwgP.css">
+    <style>.dash-debug-menu {
+    transition: 0.3s;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    background-color: #119dff;
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+.dash-debug-menu--open {
+    transform: rotate(-180deg);
+}
+
+.dash-debug-menu:hover {
+    background-color: #108de4;
+}
+
+.dash-debug-menu__icon {
+    width: auto;
+    height: 24px;
+}
+
+.dash-debug-menu__outer {
+    transition: 0.3s;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 27px;
+    right: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    height: 80px;
+    border-radius: 40px;
+    padding: 5px 78px 5px 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25),
+        0px 1px 3px rgba(162, 177, 198, 0.32);
+}
+.dash-debug-menu__outer--closed {
+    height: 60px;
+    width: 60px;
+    bottom: 37px;
+    right: 37px;
+    padding: 0;
+}
+
+.dash-debug-menu__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.dash-debug-menu__button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+}
+
+.dash-debug-menu__button {
+    position: relative;
+    background-color: #B9C2CE;
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+    color: #fff;
+    cursor: pointer;
+}
+.dash-debug-menu__button:hover {
+    background-color: #a1a9b5;
+}
+.dash-debug-menu__button--enabled {
+    background-color: #00CC96;
+}
+.dash-debug-menu__button.dash-debug-menu__button--enabled:hover {
+    background-color: #03bb8a;
+}
+
+.dash-debug-menu__button-label {
+    cursor: inherit;
+}
+
+.dash-debug-menu__button::before {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+    padding: 7px;
+    width: 120px;
+    border-radius: 3px;
+    background-color: rgba(68,68,68,0.7);
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+}
+.dash-debug-menu__button:hover::before {
+    visibility: visible;
+}
+.dash-debug-menu__button--callbacks::before {
+    content: "Toggle Callback Graph";
+}
+.dash-debug-menu__button--errors::before {
+    content: "Toggle Errors";
+}
+.dash-debug-menu__button--available,
+.dash-debug-menu__button--available:hover {
+    background-color: #00CC96;
+    cursor: default;
+}
+.dash-debug-menu__button--available::before {
+    content: "Server Available";
+}
+.dash-debug-menu__button--unavailable,
+.dash-debug-menu__button--unavailable:hover {
+    background-color: #F1564E;
+    cursor: default;
+}
+.dash-debug-menu__button--unavailable::before {
+    content: "Server Unavailable. Check if the process has halted or crashed.";
+}
+.dash-debug-menu__button--cold,
+.dash-debug-menu__button--cold:hover {
+    background-color: #FDDA68;
+    cursor: default;
+}
+.dash-debug-menu__button--cold::before {
+    content: "Hot Reload Disabled";
+}
+
+.dash-debug-alert {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.dash-debug-alert-label {
+    display: flex;
+    position: fixed;
+    bottom: 81px;
+    right: 29px;
+    z-index: 10002;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25),
+        0px 1px 3px rgba(162, 177, 198, 0.32);
+    border-radius: 32px;
+    background-color: white;
+    padding: 4px;
+}
+
+.dash-debug-error-count {
+    display: block;
+    margin: 0 3px;
+}
+
+.dash-debug-disconnected {
+    font-size: 14px;
+    margin-left: 3px;
+}
+</style><style>.dash-error-menu {
+    max-width: 50%;
+    max-height: 60%;
+    display: contents;
+    font-family: monospace;
+    font-size: 14px;
+    font-variant-ligatures: common-ligatures;
+}
+
+.dash-error-card {
+    box-sizing: border-box;
+    background: #ffffff;
+    display: inline-block;
+    /* shadow-1 */
+    box-shadow: 0px 6px 16px rgba(80, 103, 132, 0.165),
+        0px 2px 6px rgba(80, 103, 132, 0.12),
+        0px 0px 1px rgba(80, 103, 132, 0.32);
+    border-radius: 4px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    animation: dash-error-card-animation 0.5s;
+    padding: 24px;
+    text-align: left;
+    background-color: white;
+
+}
+.dash-error-card--alerts-tray {
+    position: absolute;
+    top: -300px;
+    left: -1px;
+    animation: none;
+    box-shadow: none;
+    border: 1px solid #ececec;
+    border-bottom: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 422px;
+}
+.dash-error-card--container {
+    padding: 10px 10px;
+    width: 600px;
+    max-width: 800px;
+    max-height: calc(100vh - 50px);
+    margin: 10px;
+    overflow: auto;
+    z-index: 1001;  /* above the plotly.js toolbar */
+}
+
+.dash-error-card__topbar {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash-error-card__message {
+    font-size: 14px;
+}
+
+.dash-error-card__message > strong {
+    color: #ff4500;
+}
+
+.dash-error-card__content {
+    box-sizing: border-box;
+    padding: 10px 10px;
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25),
+        0px 1px 3px rgba(162, 177, 198, 0.32);
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.dash-error-card__list-item {
+    background: #ffffff;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25),
+        0px 1px 3px rgba(162, 177, 198, 0.32);
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes dash-error-card-animation {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+</style><style>.error-container {
+    margin-top: 10px;
+}
+
+.dash-fe-errors {
+    min-width: 386px;
+    max-width: 650px;
+    max-height: 450px;
+    display: inline-block;
+}
+
+.dash-fe-error__icon-error {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 16px;
+}
+.dash-fe-error__icon-close {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    display: inline-block;
+}
+.dash-fe-error__icon-arrow {
+    width: 8px;
+    height: 28px;
+    margin: 0px 8px;
+}
+.dash-fe-error-top {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+.dash-fe-error-top__group:first-child {
+    /*
+     * 77% is the maximum space allowed based off of the other elements
+     * in the top part of the error container (timestamp & collapse arrow).
+     * this was manually determined */
+    width: 77%;
+}
+.dash-fe-error-top__group {
+    display: inline-flex;
+    align-items: center;
+}
+.dash-fe-error__title {
+    text-align: left;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 14px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.dash-fe-error__timestamp {
+    margin-right: 20px;
+}
+.dash-fe-error__collapse--flipped {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.dash-fe-error__info_title {
+    margin: 0;
+    color: #506784;
+    font-size: 16px;
+    background-color: #f3f6fa;
+    border: 2px solid #dfe8f3;
+    box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+}
+
+.dash-fe-error__info {
+    border: 1px solid #dfe8f3;
+    margin: 0 0 1em 0;
+    padding: 10px;
+
+    background-color: white;
+    border: 2px solid #dfe8f3;
+    color: #506784;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.dash-fe-error__curved {
+    border-radius: 4px;
+}
+
+.dash-fe-error__curved-top {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-width: 0px;
+}
+
+.dash-fe-error__curved-bottom {
+    border-radius-bottom-left: 4px;
+    border-radius-bottom-right: 4px;
+    background-color: #FFEFEF;
+}
+
+.dash-be-error__st {
+    background-color: #fdf3f4;
+    min-width: 386px;
+    max-width: 650px;
+    /* iframe container handles the scrolling */
+    overflow: hidden;
+    display: inline-block;
+}
+
+.dash-be-error__str {
+    background-color: #fdf3f4;
+    min-width: 386px;
+    max-width: 650px;
+    overflow: auto;
+    display: inline-block;
+    white-space: pre-wrap;
+}
+</style><style>.percy-show {
+    display: none;
+}
+
+@media only percy {
+    .percy-hide {
+        display: none;
+    }
+    .percy-show {
+        display: block;
+    }
+}
+</style><style>.dash-callback-dag--container {
+    border-radius: 4px;
+    position: fixed;
+    bottom: 165px;
+    right: 16px;
+    max-width: 80vw;
+    max-height: calc(100vh - 180px);
+    overflow: auto;
+    box-sizing: border-box;
+    background: #ffffff;
+    display: inline-block;
+    /* shadow-1 */
+    box-shadow: 0px 6px 16px rgba(80, 103, 132, 0.165),
+        0px 2px 6px rgba(80, 103, 132, 0.12),
+        0px 0px 1px rgba(80, 103, 132, 0.32);
+}
+</style></head>
+    <body>
+        
+<div id="react-entry-point"><div id="_dash-global-error-container"><div><div class="dash-debug-menu__outer dash-debug-menu__outer--closed"><div class="dash-debug-menu__content"></div></div><div class="dash-debug-menu dash-debug-menu--closed"><svg width="42" height="24" fill="none" class="dash-debug-menu__icon dash-debug-menu__icon--debug"><path d="M14.85 21.197L5.616 12l9.225-9.197L12.028 0 0 12l12.037 12 2.813-2.803zm12.3 0L36.375 12 27.15 2.803 29.963 0 42 12 29.962 24l-2.812-2.803z" fill="#fff"></path></svg></div><div><div><div id="_dash-app-content"><div><h6>Enter 1 if True 0 if False:</h6><div>Male?: <input id="my-input-1" type="text" step="any" persisted_props="value" persistence_type="local" value="1"></div><div>Married?: <input id="my-input-2" type="text" step="any" persisted_props="value" persistence_type="local" value="0"></div><div>Family?: <input id="my-input-3" type="text" step="any" persisted_props="value" persistence_type="local" value="0"></div><div>Graduate?: <input id="my-input-4" type="text" step="any" persisted_props="value" persistence_type="local" value="1"></div><div>Employed?: <input id="my-input-5" type="text" step="any" persisted_props="value" persistence_type="local" value="0"></div><div>Credit-worthy?: <input id="my-input-6" type="text" step="any" persisted_props="value" persistence_type="local" value="1"></div><div>Urban?: <input id="my-input-7" type="text" step="any" persisted_props="value" persistence_type="local" value="1"></div><div>Semi-urban?: <input id="my-input-8" type="text" step="any" persisted_props="value" persistence_type="local" value="0"></div><div>Rural?: <input id="my-input-9" type="text" step="any" persisted_props="value" persistence_type="local" value="0"></div><br><div id="my-output">Output: eligible</div></div></div></div><div class="dash-error-menu"><div class=""></div></div></div></div></div></div>
+
+        <footer>
+            <script id="_dash-config" type="application/json">{"url_base_pathname": null, "requests_pathname_prefix": "/", "ui": true, "props_check": true, "show_undo_redo": false, "suppress_callback_exceptions": false, "hot_reload": {"interval": 3000, "max_retry": 8}}</script>
+            <script src="./Dash_files/polyfill@7.v1_5_0m1595174731.8.7.min.js"></script>
+<script src="./Dash_files/react@16.v1_5_0m1595174731.13.0.js"></script>
+<script src="./Dash_files/react-dom@16.v1_5_0m1595174731.13.0.js"></script>
+<script src="./Dash_files/prop-types@15.v1_5_0m1595174731.7.2.js"></script>
+<script src="./Dash_files/dash_core_components.v1_10_1m1595174748.min.js"></script>
+<script src="./Dash_files/dash_core_components-shared.v1_10_1m1595174748.js"></script>
+<script src="./Dash_files/dash_html_components.v1_0_3m1595174757.min.js"></script>
+<script src="./Dash_files/dash_renderer.v1_5_0m1595174731.dev.js"></script>
+            <script id="_dash-renderer" type="application/javascript">var renderer = new DashRenderer();</script>
+        </footer>
+    
+</body></html>
